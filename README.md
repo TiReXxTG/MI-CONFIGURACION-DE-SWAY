@@ -8,4 +8,5 @@ sudo pacman -S sway kitty rofi nautilus mako blueman bluez bluez-utils grim slur
 
 Esto es para la waybar
 
-sudo pacman -S pavucontrol network-manager-applet gnome-calendar
+sudo pacman -S pavucontrol network-manager-applet gnome-calendar xdg-desktop-portal-gtk
+yay -S wlogout
