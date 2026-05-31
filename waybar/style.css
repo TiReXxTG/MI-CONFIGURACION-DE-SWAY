@@ -1,0 +1,120 @@
+* {
+    font-family: "JetBrainsMono Nerd Font";
+    font-size: 15px;
+    border: none;
+    min-height: 0;
+}
+
+
+/* Barra principal */
+window#waybar {
+
+    background: rgba(0, 0, 0, 0.25);
+
+    color: #ffffff;
+
+}
+
+
+/* Botón launcher */
+#custom-launcher {
+
+    background: rgba(255,255,255,0.12);
+
+    color: #ffffff;
+
+    margin: 6px 8px;
+
+    padding: 0 15px;
+
+    border-radius: 18px;
+
+    font-size: 18px;
+
+}
+
+
+/* Escritorios */
+#workspaces {
+
+    background: transparent;
+
+}
+
+
+#workspaces button {
+
+    background: rgba(255,255,255,0.08);
+
+    color: rgba(255,255,255,0.45);
+
+    margin: 6px 3px;
+
+    padding: 0 12px;
+
+    border-radius: 15px;
+
+}
+
+
+#workspaces button.focused {
+
+    background: #ffffff;
+
+    color: #000000;
+
+}
+
+
+/* Módulos */
+#clock,
+#pulseaudio,
+#network,
+#bluetooth,
+#battery,
+#tray,
+#custom-power {
+
+    background: rgba(255,255,255,0.10);
+
+    color: #ffffff;
+
+    margin: 6px 4px;
+
+    padding: 0 13px;
+
+    border-radius: 18px;
+
+}
+
+
+/* Hover */
+#clock:hover,
+#pulseaudio:hover,
+#network:hover,
+#bluetooth:hover,
+#battery:hover,
+#custom-launcher:hover {
+
+    background: rgba(255,255,255,0.22);
+
+}
+
+
+/* Botón apagado */
+#custom-power {
+
+    margin-right: 10px;
+
+    font-size: 18px;
+
+}
+
+
+#custom-power:hover {
+
+    background: #ffffff;
+
+    color: #000000;
+
+}

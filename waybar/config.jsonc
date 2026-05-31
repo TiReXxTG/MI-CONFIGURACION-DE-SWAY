@@ -1,0 +1,102 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 42,
+
+    "modules-left": [
+        "custom/launcher",
+        "sway/workspaces"
+    ],
+
+    "modules-center": [
+        "clock"
+    ],
+
+    "modules-right": [
+        "pulseaudio",
+        "network",
+        "bluetooth",
+        "battery",
+        "tray",
+        "custom/power"
+    ],
+
+
+    "custom/launcher": {
+        "format": "🚀",
+        "tooltip": "Aplicaciones",
+        "on-click": "rofi -show drun"
+    },
+
+
+    "sway/workspaces": {
+        "disable-scroll": true,
+        "all-outputs": true,
+        "format": "{name}"
+    },
+
+
+    "clock": {
+        "interval": 1,
+
+        "locale": "es_MX.UTF-8",
+
+        "format": "{:%A %d de %B de %Y  %I:%M:%S %p}",
+
+        "tooltip": true,
+
+        "tooltip-format": "<big>{:%A %d de %B de %Y}</big>\n\n{calendar}",
+
+        "calendar": {
+            "mode": "month",
+            "weeks-pos": "right"
+        },
+
+        "on-click": "gnome-calendar"
+    },
+
+    "pulseaudio": {
+        "format": " {volume}%",
+        "format-muted": "󰝟 Silencio",
+        "scroll-step": 5,
+        "on-click": "pavucontrol"
+    },
+
+
+    "network": {
+        "format-wifi": " {essid}",
+        "format-ethernet": "󰈀 Cable",
+        "format-disconnected": "󰤭 Sin red",
+        "on-click": "nm-connection-editor"
+    },
+
+
+    "bluetooth": {
+        "format": "",
+        "format-disabled": "󰂲",
+        "on-click": "blueman-manager"
+    },
+
+
+    "battery": {
+        "format": "󰁹 {capacity}%",
+        "format-charging": "󰂄 {capacity}%"
+    },
+
+
+    "tray": {
+        "icon-size": 25,
+        "spacing": 10,
+        "show-passive-items": false
+    },
+
+
+    "custom/power": {
+        "format": " ",
+        "tooltip": "Menú de energía",
+        "on-click": "wlogout --protocol layer-shell -b 2 -T 280 -B 280 -L 420 -R 420",
+        "on-click-right": "swaylock",
+        "on-scroll-up": "brightnessctl set +5%",
+        "on-scroll-down": "brightnessctl set 5%-"
+    }
+}
