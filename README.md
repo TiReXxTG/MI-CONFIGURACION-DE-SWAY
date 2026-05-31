@@ -7,10 +7,11 @@ recuerda que todo va en la carpeta .config y alli pones un carpeta con el nombre
 
 Esto es para la config
 
-sudo pacman -S sway kitty rofi nautilus mako blueman bluez bluez-utils grim slurp satty neovim playerctl brightnessctl pipewire pipewire-pulse wireplumber awww
+# Sway config
+sudo pacman -S sway kitty rofi-wayland nautilus mako blueman bluez bluez-utils grim slurp satty neovim playerctl brightnessctl pipewire pipewire-pulse wireplumber awww
 
-Esto es para la waybar
+# Waybar
+sudo pacman -S waybar pavucontrol network-manager-applet gnome-calendar xdg-desktop-portal-gtk jq
 
-sudo pacman -S pavucontrol network-manager-applet gnome-calendar xdg-desktop-portal-gtk jq
-
+# AUR
 yay -S wlogout
