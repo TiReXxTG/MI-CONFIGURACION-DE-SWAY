@@ -15,3 +15,6 @@ sudo pacman -S waybar pavucontrol network-manager-applet gnome-calendar xdg-desk
 
 # AUR
 yay -S wlogout
+
+
+LAUNCHER.SH NECESITA PERMISOS DACELOS
