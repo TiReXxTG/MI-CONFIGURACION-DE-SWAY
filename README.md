@@ -10,6 +10,8 @@ Esto es para la config
 # Sway config
 sudo pacman -S sway kitty rofi-wayland nautilus mako blueman bluez bluez-utils grim slurp satty neovim playerctl brightnessctl pipewire pipewire-pulse wireplumber awww
 
+sudo pacman -S swaylock swayidle (OPCIONALES)
+
 # Waybar
 sudo pacman -S waybar pavucontrol network-manager-applet gnome-calendar xdg-desktop-portal-gtk jq
 
