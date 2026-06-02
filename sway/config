@@ -58,7 +58,7 @@
 
     # Fondo de pantalla
     exec_always awww-daemon
-    exec aww run
+    exec awww run
 #
 
 #######################################################################################################################################
@@ -74,7 +74,7 @@
 #
     # Fondo de pantalla predeterminado
 
-    output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
+    #output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
 
     # Desde aquí puedes cambiar:
     # - Fondo de pantalla
