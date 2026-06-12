@@ -50,9 +50,9 @@
     exec_always pkill waybar
     exec_always sleep 1 && waybar
 
-    #Error que encontre en mi FIREFOX NO SE PORQUE            ESTO TOMENLO EN CUENTA, PORQUE PUEDE SER ERROR SOLAMENTE MIO
-    #exec_always systemctl --user import-environment WAYLAND_DISPLAY SWAYSOCK XDG_CURRENT_DESKTOP XDG_SESSION_TYPE
-    #exec_always dbus-update-activation-environment --systemd WAYLAND_DISPLAY SWAYSOCK XDG_CURRENT_DESKTOP=sway XDG_SESSION_TYPE
+    #Error que encontre en mi FIREFOX NO SE PORQUE
+    exec_always systemctl --user import-environment WAYLAND_DISPLAY SWAYSOCK XDG_CURRENT_DESKTOP XDG_SESSION_TYPE
+    exec_always dbus-update-activation-environment --systemd WAYLAND_DISPLAY SWAYSOCK XDG_CURRENT_DESKTOP=sway XDG_SESSION_TYPE
 
     # Notificaciones
     exec mako
@@ -182,10 +182,9 @@
         middle_emulation enabled
     }
 
-    ##   IDIOMA DEL TECLADO ##
+    ## IDIOMA DEL TECLADO ##
     input type:keyboard {
-        xkb_layout "latam,cn"
-        xkb_options "grp:win_space_toggle"
+        xkb_layout "latam",
     }
 
 #
