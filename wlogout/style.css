@@ -1,0 +1,82 @@
+* {
+    background-image: none;
+    box-shadow: none;
+    font-family: "JetBrainsMono Nerd Font";
+}
+
+window {
+    background-color: rgba(0, 0, 0, 0.92);
+}
+
+button {
+    background-color: transparent;
+    border: none;
+
+    margin: 0;
+    padding: 0;
+
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 240px;
+
+    min-width: 260px;
+    min-height: 300px;
+}
+
+button:hover {
+    background-size: 255px;
+}
+
+label {
+    color: white;
+
+    font-size: 11px;
+
+    margin-top: 245px;
+}
+/* LOCK */
+
+#lock {
+    background-image: image(url("/home/joel/.config/wlogout/icons/lock.png"));
+
+}
+
+/* LOGOUT */
+
+#logout {
+    background-image: image(
+        url("/home/joel/.config/wlogout/icons/logout.png")
+    );
+}
+
+/* SUSPEND */
+
+#suspend {
+    background-image: image(
+        url("/home/joel/.config/wlogout/icons/suspend.png")
+    );
+}
+
+/* HIBERNATE */
+
+#hibernate {
+    background-image: image(
+        url("/home/joel/.config/wlogout/icons/hibernate.png")
+    );
+}
+
+/* SHUTDOWN */
+
+#shutdown {
+    background-image: image(
+        url("/home/joel/.config/wlogout/icons/shutdown.png")
+    );
+}
+
+/* REBOOT */
+
+#reboot {
+    background-image: image(
+        url("/home/joel/.config/wlogout/icons/reboot.png")
+    );
+}
