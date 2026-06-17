@@ -24,6 +24,21 @@ done
 
 
 # ==================
+# FLATPAKS
+# ==================
+
+flatpak list --app --columns=name 2>/dev/null |
+while read app
+do
+
+    [ -z "$app" ] && continue
+
+    echo -en "$app\0icon\x1fapplication-x-executable\n"
+
+done
+
+
+# ==================
 # CARPETAS
 # ==================
 
@@ -91,6 +106,23 @@ then
 fi
 
 
+# ==================
+# ABRIR FLATPAKS
+# ==================
+
+flatpak_id=$(flatpak list --app --columns=application,name 2>/dev/null |
+awk -F'\t' -v app="$choice" '$2==app {print $1}' |
+head -n1)
+
+if [ -n "$flatpak_id" ]
+then
+
+    flatpak run "$flatpak_id" &
+    exit
+
+fi
+
+
 
 # ==================
 # ABRIR ARCHIVOS
@@ -150,12 +182,6 @@ if [ -n "$found" ]; then
         *)
             xdg-open "$found" &
             ;;
-
-    esac
-
-    exit
-
-fi
 
     esac
 
