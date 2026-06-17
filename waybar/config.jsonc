@@ -25,7 +25,7 @@
     "custom/launcher": {
         "format": "🚀",
         "tooltip": "Aplicaciones",
-        "on-click": "rofi -show drun"
+        "on-click": "~/.config/rofi/scripts/launcher.sh"
     },
 
 
@@ -94,7 +94,7 @@
     "custom/power": {
         "format": " ",
         "tooltip": "Menú de energía",
-        "on-click": "wlogout --protocol layer-shell -b 2 -T 280 -B 280 -L 420 -R 420",
+        "on-click": "wlogout --css ~/.config/wlogout/style.css",
         "on-click-right": "swaylock",
         "on-scroll-up": "brightnessctl set +5%",
         "on-scroll-down": "brightnessctl set 5%-"
